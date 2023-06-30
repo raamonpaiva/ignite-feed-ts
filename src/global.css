@@ -1,0 +1,53 @@
+/* A tag abaixo está criando variaveis CSS que vão ser usadas na div id root no index.js e
+vão estar disponiveis em todas as variaveis css */
+:root {
+    --white: #ffffff;
+    --gray-100: #e1e1e6;
+    --gray-300: #c4c4cc;
+    --gray-400: #8d8d99;
+    --gray-600: #323238;
+    --gray-700: #29292e;
+    --gray-800: #202024;
+    --gray-900: #121214;
+
+    --green-300: #00B37E;
+    --green-500: #00875f;
+
+    --red-500: #F75A68;
+
+}
+
+/* Troca a cor da borda de seleção dos elementos em foco */
+:focus{
+    outline: transparent;
+    box-shadow: 0 0 0 2px var(--green-500);
+}
+
+/* Estilos que são comuns para todos os componentes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando o body */
+body {
+    /* Cor do background */
+    background: var(--gray-900);
+    /* Cor do texto */
+    color: var(--gray-300);
+
+    /* Aplica nos navegadores baseados no webkit, uma padronização de fonts mais detalhadas,
+    é uma função nativa */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Estilizando a fonte padrão como Roboto e a fallback como sans-serif para o body,input,
+textarea e button */
+body,input,textarea,button{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    /* Nunca utilizar tamanho de fontes fixas, neste caso foi utilizado rem, que pode aumentar ou dimi
+    nuir as fontes caso alguem com necessidades de o zoom ou aumente a fonte no navegador */
+    font-size: 0.875rem;
+}

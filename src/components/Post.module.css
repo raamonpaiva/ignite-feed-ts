@@ -1,0 +1,122 @@
+.post{
+    background: var(--gray-800);
+    border-radius: 8px;
+    padding: 2.5rem;
+}
+
+/* Da uma margem superior do segundo post(e os seguintes) para o anterior  */
+.post + .post{
+    margin-top: 2rem;    
+}
+
+.headerPost{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.authorInfo{
+    display:flex;
+    flex-direction: column;
+}
+
+.strongAuthorInfo{
+    color: var(--gray-100);
+    line-height: 1.6;
+}
+
+.spanAuthorInfo{
+    color: var(--gray-400);
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.time{
+    font-size: 0.875rem;
+    color: var(--gray-400)
+}
+
+.content{
+    line-height: 1.6;
+    color: var(--gray-300);
+    margin-top: 1.5rem;
+}
+
+.content p {
+    margin-top: 1rem;
+    
+}
+
+.content a {
+    font-weight: bold;
+    color: var(--green-500);
+    text-decoration: none;
+    
+}
+
+.content a:hover{
+    color: var(--green-300);
+}
+
+.commentForm{
+    width: 100%;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--gray-600);
+}
+
+.commentFormStrong{
+    line-height: 1.6;
+    color: var(--gray-100)
+}
+
+.commentFormTextArea{
+    width: 100%;
+    background: var(--gray-900);
+    border:0;
+    resize:none;
+    height: 6rem;
+    padding: 1rem;
+    border-radius: 8px;
+    color: var(--gray-100);
+    line-height: 1.4;
+    margin-top: 1rem;
+}
+
+/* Footer pra fazer o botão desaparecer se a caixa de texto não estiver selecionada  */
+.commentForm footer{
+    visibility: hidden;
+    max-height: 0;
+}
+
+/* Faz o footer aparecer quando for focado, utilizando a função :focus-withing */
+.commentForm:focus-within footer {
+    visibility: visible;
+    max-height: none;
+}
+
+.commentFormButton{
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    border:0;
+    background: var(--green-500);
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.commentFormButton:hover{
+    background: var(--green-300)
+}
+
+.commentList{
+    margin-top: 2rem;
+}
+

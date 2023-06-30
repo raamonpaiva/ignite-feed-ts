@@ -1,0 +1,19 @@
+/* Colocar a extensão .module.css para atrelar um Css apenas à um determinado
+componente, isso é possivel porque o Vite.js tem suporte ao CSS Modules*/
+
+/* .header vai ser chamado no componente que utilizara este estilo através da syntaxe
+{style.header} , onde style é o nome dado ao import do Css module e .header é a tag css abaixo. */
+.header {
+    background: var(--gray-800);
+    display: flex;
+    justify-content: center;
+    /* 1 rem = 16px, logo o header vai ter um espacamento de ≃20 px pra cima e baixo e 0 para os lados */
+    padding: 1.25rem 0;
+}
+
+/* Alterando a imagem de logo do header  */
+.header img {
+    height: 2rem;
+}
+
+
