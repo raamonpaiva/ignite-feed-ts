@@ -7,7 +7,7 @@
 
 /* Para a importação de um CSS module, diferentemente de um .css comum, é necessario dar um nome
 ao .module.css importado, neste caso style */
-import style from './Header.module.css'
+import styles from './Header.module.css'
 
 /* Importando o logo */
 import igniteLogo from '../assets/ignite-logo.svg'
@@ -21,7 +21,7 @@ function Header (){
      * chamada do estilo da-se por {style.header}
      * 
      */
-    <header className={style.header} >
+    <header className={styles.header} >
         <img src={igniteLogo} alt='Logotipo do Ignite' />  
     </header>
         
