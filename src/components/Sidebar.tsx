@@ -17,13 +17,13 @@ function Sidebar(){
             
             <div className={styles.profile}>
                 <Avatar src="http://github.com/raamonpaiva.png" />
-                <strong className={styles.strong}>Raamon Paiva</strong>
-                <span className={styles.span}>Web Development</span>
+                <strong>Raamon Paiva</strong>
+                <span>Web Development</span>
             </div>
 
 
             <footer className={styles.footer}>
-                <a className={styles.a} href="#">
+                <a href="#">
                     {/* É possivel definir o tamanho do icone do phosphor */}
                     <PencilLine size={20} />
                     Editar Seu Perfil
