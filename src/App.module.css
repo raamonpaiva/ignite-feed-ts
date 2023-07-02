@@ -1,29 +1,29 @@
 .wrapper {
-    /* Para fazer o calculo de 70 rem, foi olhado o desenho do figma e visto que a largura da sidebar +
+  /* Para fazer o calculo de 70 rem, foi olhado o desenho do figma e visto que a largura da sidebar +
     a largura da caixa de posts + espaço entre elas tem 1120 px , e como 1 rem = 16, 70 rems = 1120px */
-    max-width: 70rem;
-    /* Auto faz com que a div fique centralizada na tela */
-    margin: 2rem auto;
-    /* Caso a tela seja diminuida pra um tamanho menor 16px, o conteudo não vai ficar colado na caixa*/
-    padding: 0 1rem;
+  max-width: 70rem;
+  /* Auto faz com que a div fique centralizada na tela */
+  margin: 2rem auto;
+  /* Caso a tela seja diminuida pra um tamanho menor 16px, o conteudo não vai ficar colado na caixa*/
+  padding: 0 1rem;
 
-    display: grid;
-    /* Largura da Sidebar sendo fixa de 256 e 1fr será a area do post, isso permite um tamanho flexivel */
-    grid-template-columns: 256px 1fr;
-    /* Espaçamento entre a sidebar e a area do post */
-    gap: 2rem;
-    /* Força a sidebar pra ficar no topo */
-    align-items: flex-start;
-
+  display: grid;
+  /* Largura da Sidebar sendo fixa de 256 e 1fr será a area do post, isso permite um tamanho flexivel */
+  grid-template-columns: 256px 1fr;
+  /* Espaçamento entre a sidebar e a area do post */
+  gap: 2rem;
+  /* Força a sidebar pra ficar no topo */
+  align-items: flex-start;
 }
 
 /* melhora a visualização em dispositivos pequenos */
-@media (max-width: 768px){
-    html {
-        font-size: 87.5%;
-    }
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
 
-    .wrapper{
-        grid-template-columns: 1fr;
-    }
+  .wrapper {
+    /* Bota tudo em 1 coluna para dispositivos moveis */
+    grid-template-columns: 1fr;
+  }
 }
