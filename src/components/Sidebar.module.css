@@ -42,7 +42,7 @@
   padding: 1.5rem 2rem 2rem;
 }
 
-.foorter a {
+.footer a {
   background: transparent;
   color: var(--green-500);
   border: 1px solid var(--green-500);
@@ -59,6 +59,8 @@
 
   /* Espaço entre o icone e o texto */
   gap: 0.62rem;
+
+  transition: background-color 0.1s;
 }
 
 .footer a:hover {

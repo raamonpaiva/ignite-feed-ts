@@ -119,10 +119,9 @@ function Post({author, publishedAt, content}:PostProps){
             {/* Seção de comentários */}
 
             <form onSubmit={handleCreateNewComment} className={styles.commentForm}>
-                <strong className={styles.commentFormStrong}>Deixe seu feedback!</strong>
+                <strong>Deixe seu feedback!</strong>
 
                 <textarea  
-                    className={styles.commentFormTextArea} 
                     name='textAreaComment' 
                     placeholder="Deixe um comentário"
                     value={newCommentText}
@@ -133,7 +132,6 @@ function Post({author, publishedAt, content}:PostProps){
 
                 <footer >
                     <button 
-                        className={styles.commentFormButton} 
                         type="submit"
                         disabled={newCommentText.length === 0}
                     >
