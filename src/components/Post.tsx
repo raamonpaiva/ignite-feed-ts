@@ -92,8 +92,8 @@ function Post({author, publishedAt, content}:PostProps){
                 <div className={styles.author}>
                    <Avatar src={author.avatarUrl} />
                     <div className={styles.authorInfo}>
-                        <strong className={styles.strongAuthorInfo}>{author.name}</strong>
-                        <span className={styles.spanAuthorInfo}>{author.occupation}</span>
+                        <strong>{author.name}</strong>
+                        <span>{author.occupation}</span>
                     </div>
                 </div>
 
